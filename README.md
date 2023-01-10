@@ -26,3 +26,15 @@ Log in to the AWS Management Console and navigate to the VPC dashboard.
 4. Create a route table for your VPC. A route table is used to control the flow of traffic within a VPC. It contains a set of rules that dictate where traffic should be directed based on its destination IP address.
 
 5. Create a network gateway for your VPC. A network gateway is used to connect a VPC to other networks. This can include connecting to other VPCs, on-premises networks, or the internet.
+
+6. Create a security group for your VPC. A security group is used to control access to your instances by specifying which incoming traffic should be allowed and which should be blocked.
+ 
+7. Create an Application Load Balancer. Go to the EC2 dashboard and select "Load Balancer" in the navigation pane. Click on "Create Load Balancer" and choose "Application Load Balancer" as the type. Provide a name and select the VPC and subnets for your ALB.
+
+8. Create a target group for your ALB. A target group is used to route incoming traffic to one or more instances. Provide a name and select the protocol and port for your target group.
+
+9. Create an Auto Scaling Group. Go to the EC2 dashboard and select "Auto Scaling" in the navigation pane. Click on "Create Auto Scaling Group" and provide a name for your group. Select the VPC and subnet for your group and choose the launch configuration that contains the Amazon Machine Image (AMI) for your instances.
+
+10. Create a scaling policy that defines when to increase or decrease the number of instances.
+
+
